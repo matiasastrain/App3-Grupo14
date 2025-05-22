@@ -112,10 +112,6 @@ Salida esperada:
 ## 6. Ejemplo de Uso
 
   App3 MatrizBosqueInicial EnergiaInicial
- 
-  Salida:
-  - Mejor camino
-  - Energía final
 
 ## 7. Conclusión
 

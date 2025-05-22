@@ -31,10 +31,10 @@ Un mago quiere atravesar un bosque encantado lleno de runas que modifican su ene
 
 1. El bosque es una matriz de enteros (puede ser de tamaño NxN).
 2. El mago puede tener los siguientes movimientos:
-   2.1 A la derecha o hacia abajo.
-   2.2 En sentido Diagonal abajo-derecha.
-   2.3 A la izquierda, solo si no vuelve a una celda ya visitada.
-   2.4 Hacia arriba, solo si no vuelve a una celda ya visitada.
+   - A la derecha o hacia abajo.
+   - En sentido Diagonal abajo-derecha
+   - A la izquierda, solo si no vuelve a una celda ya visitada
+   - Hacia arriba, solo si no vuelve a una celda ya visitada.
 4. Los movimientos diagonales consumen 2 unidades extra de energía.
 5. Si se pasa por una celda con valor 0, es una trampa: pierde 3 puntos de energía adicionales.
 6. En cada celda, suma (o resta) el valor de la runa a su energía.

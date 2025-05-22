@@ -85,7 +85,7 @@ Salida esperada:
 
 | Criterio | Peso | Descripción |
 |----------|------|-------------|
-| 1. Funcionamiento general | 30% | <ul><li>El proyecto compila y se ejecuta correctamente.</li>
+| 1. Funcionamiento general | 30% | <ul><li>El proyecto compila y se ejecuta correctamente.</li><li>El programa cumple con los requerimientos funcionales: recibe una matriz, calcula correctamente el mejor camino respetando las reglas del juego.</li></ul> |
 | 2. Paradigma Funcional | 30% | <ul><li>Uso adecuado de clases, encapsulamiento, herencia, interfaces y colecciones.</li><li>Organización en paquetes clara y lógica.</li><li>Aplicación de principios de OOP (mínima duplicación de código, coherencia en la jerarquía de clases, etc.).</li></ul> |
 | 3. Informe de diseño y reflexiones finales | 10% | <ul><li><strong>Informe de diseño</strong>: explica la arquitectura, justifica las decisiones (7%).</li><li><strong>Reflexiones</strong>: aprendizajes, desafíos, etc. (5%).</li><li><strong>Uso de IA</strong>: transparencia y validación (3%).</li></ul> |
 | 4. Uso de Git (commits y pull request) / Organización del repositorio/Presentación | 20% | <ul><li>Commits equilibrados entre integrantes (aporte individual visible).</li><li>Estructura del repositorio clara, con README que indique cómo compilar/ejecutar.</li></ul> |

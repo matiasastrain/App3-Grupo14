@@ -69,7 +69,7 @@ Salida esperada:
 - Agregar runas especiales: si una celda es "T" (teletransportador), puede enviar al mago a otra coordenada fija si la energía es suficiente.
 - Opción de diagonales si el mago encuentra una runa "D" (doble salto).
   
-- **Fecha de entrega**: Sábado 31 de Mayo a las 23:59.
+- **Fecha de entrega**: 9 y 10 de Junio, dependiendo las indicaciones del profesor de cada sección. Hora: 23:59 hrs
 - Por cada día de atraso se descuenta 1 punto, comenzando a las 00:00 del día siguiente.
   - Ejemplo: si entregan a las 00:00 del día siguiente, la nota máxima es 6.0.
 

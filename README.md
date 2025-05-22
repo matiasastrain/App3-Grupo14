@@ -30,18 +30,29 @@ Un mago quiere atravesar un bosque encantado lleno de runas que modifican su ene
 ### 2.1 Requerimientos funcionales
 
 1. El bosque es una matriz de enteros (puede ser de tamaño NxN).
-2. El mago solo puede moverse a la derecha o hacia abajo.
-3. En cada celda, suma (o resta) el valor de la runa a su energía.
-4. El mago comienza con una energía inicial (por ejemplo, 10).
-5. El recorrido final debe ser uno de los caminos posibles que deje al mago con la mayor energía posible al final.
-6. Si en algún momento la energía es menor que 0, el camino se invalida.
+2. El mago puede tener los siguientes movimientos:
+   2.1 A la derecha o hacia abajo.
+   2.2 En sentido Diagonal abajo-derecha.
+   2.3 A la izquierda, solo si no vuelve a una celda ya visitada.
+   2.4 Hacia arriba, solo si no vuelve a una celda ya visitada.
+4. Los movimientos diagonales consumen 2 unidades extra de energía.
+5. Si se pasa por una celda con valor 0, es una trampa: pierde 3 puntos de energía adicionales.
+6. En cada celda, suma (o resta) el valor de la runa a su energía.
+7. El mago comienza con una energía inicial (por ejemplo, 12).
+8. El recorrido final debe ser uno de los caminos posibles que deje al mago con la mayor energía posible al final.
+9. Si en algún momento la energía es menor que 0, el camino se invalida.
    
 
 ### 2.2 Supuestos y detalles
 
 Entrada:
-  1. Matriz de runas: [[2, -3, 1], [-5, 4, -2], [1, 3, 2]]
-  2. Energía inicial: 10
+  1. Matriz de runas:    [[ 2, -3,  1,  0,  2,  3],
+                         [-5,  4, -2,  1,  0, -4],
+                         [ 1,  3,  0, -3,  2,  2],
+                         [ 2, -1,  4,  0, -5,  1],
+                         [ 0,  2, -3,  3,  4, -1],
+                         [ 1,  0,  2, -2,  1,  5]]
+  2. Energía inicial: 12
      
 Salida esperada:
   1. La lista con las coordenadas del camino válido con mayor energía final.
@@ -86,8 +97,8 @@ Salida esperada:
 | Criterio | Peso | Descripción |
 |----------|------|-------------|
 | 1. Funcionamiento general | 30% | <ul><li>El proyecto compila y se ejecuta correctamente.</li><li>El programa cumple con los requerimientos funcionales: recibe una matriz, calcula correctamente el mejor camino respetando las reglas del juego.</li></ul> |
-| 2. Paradigma Funcional | 30% | <ul><li>Uso adecuado de clases, encapsulamiento, herencia, interfaces y colecciones.</li><li>Organización en paquetes clara y lógica.</li><li>Aplicación de principios de OOP (mínima duplicación de código, coherencia en la jerarquía de clases, etc.).</li></ul> |
-| 3. Informe de diseño y reflexiones finales | 10% | <ul><li><strong>Informe de diseño</strong>: explica la arquitectura, justifica las decisiones (7%).</li><li><strong>Reflexiones</strong>: aprendizajes, desafíos, etc. (5%).</li><li><strong>Uso de IA</strong>: transparencia y validación (3%).</li></ul> |
+| 2. Paradigma Funcional | 30% | <ul><li>Se utiliza un enfoque funcional consistente: funciones puras, recursión, inmutabilidad, composición de funciones y estructuras funcionales.</li</ul>|
+| 3. Informe de diseño y reflexiones finales | 10% | <ul><li>Documento claro y estructurado que explique: diseño de solución, decisiones tomadas, posibles mejoras y reflexión sobre la experiencia.</li></ul> |
 | 4. Uso de Git (commits y pull request) / Organización del repositorio/Presentación | 20% | <ul><li>Commits equilibrados entre integrantes (aporte individual visible).</li><li>Estructura del repositorio clara, con README que indique cómo compilar/ejecutar.</li></ul> |
 | 5. Presentación | 10% | <ul><li>Presentar en clases la solución la app</li><li>Presentar la app funcionando.</li></ul> |
 | **Total** | **100%** |  |
@@ -100,6 +111,11 @@ Salida esperada:
 
 ## 6. Ejemplo de Uso
 
+  App3 MatrizBosqueInicial EnergiaInicial
+ 
+  Salida:
+  - Mejor camino
+  - Energía final
 
 ## 7. Conclusión
 

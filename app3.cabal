@@ -1,0 +1,37 @@
+cabal-version:       2.2
+
+name:                app3
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/githubuser/app3#readme
+license:             BSD-3-Clause
+author:              Matías Astrain 
+maintainer:          example@example.com
+copyright:           2025 Author name heres
+category:            Web
+build-type:          Simple
+extra-source-files:  READMEAlunmos.md, README.md
+                     
+
+
+
+executable app3
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  other-modules:       Bosque, Caminos
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5,containers,
+                     random
+
+
+
+  ghc-options:         -Wall
+                       -Wcompat
+                       -Widentities
+                       -Wincomplete-record-updates
+                       -Wincomplete-uni-patterns
+                       -Wmissing-export-lists
+                       -Wmissing-home-modules
+                       -Wpartial-fields
+                       -Wredundant-constraints
